@@ -1,6 +1,4 @@
-Mary Boyd Datadog Assignment 5/29/18
-
-##Prerequisites - Setup the environment
+## Prerequisites - Setup the environment
 
 * You can spin up a fresh linux VM via Vagrant or other tools so that you don’t run into any OS or dependency issues.
 
@@ -16,7 +14,7 @@ tags: region:east, region:nw, application:database, database:primary, role:sobot
 ```
 
 Here is the Host Map page displaying the tags:
-![Agent tags](,/supporting-files/agent_config_tags.png?raw=true)
+![Agent tags](/supporting-files/agent_config_tags.png?raw=true)
 
 * Install a database on your machine (MongoDB, MySQL, or PostgreSQL) and then install the respective Datadog integration for that database.
 
@@ -77,7 +75,7 @@ init_config:
 ```
 
 I restarted the Agent and ran the `sudo service datadog-agent status` command to validate the installation. `mongo` appeared in the Checks section.
-![Database integration check](mongo-checks.png?raw=true)
+![Database integration check](/supporting-files/mongo-checks.png?raw=true)
 
 * Create a custom Agent check that submits a metric named my_metric with a random value between 0 and 1000.
 
@@ -85,7 +83,7 @@ I restarted the Agent and ran the `sudo service datadog-agent status` command to
 
 I validated that the metric is working by looking at the Metrics summary in the UI and by running `sudo service datadog-agent status`, where metric_check appeared under Checks.
 
-![my_metric check](my_metric-2.png?raw=true)
+![my_metric check](/supporting-files/my_metric-2.png?raw=true)
 
 * Change your check's collection interval so that it only submits the metric once every 45 seconds.
 
@@ -107,12 +105,12 @@ Utilize the Datadog API to create a Timeboard that contains:
 
 See the attached create_timeboard.rb file.
 
-![timeboard](timeboard.png?raw=true)
+![timeboard](/supporting-files/timeboard.png?raw=true)
 
 * Set the Timeboard's timeframe to the past 5 minutes
 * Take a snapshot of this graph and use the @ notation to send it to yourself.
 
-![timeboard](timeboard-snapshot-2.png?raw=true)
+![timeboard](/supporting-files/timeboard-snapshot-2.png?raw=true)
 
 * Bonus Question: What is the Anomaly graph displaying?
 
