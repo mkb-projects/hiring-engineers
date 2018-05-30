@@ -2,8 +2,8 @@ require 'rubygems'
 require 'dogapi'
 require 'pry'
 
-api_key = '5f3327ba307129d4814e7dd8b328b44d'
-app_key = '59daf7a8a96081cae2d7e026bcf06dbb74cc9f89'
+api_key = 'redacted'
+app_key = 'redacted'
 
 dog = Dogapi::Client.new(api_key, app_key)
 # Create a timeboard.
@@ -14,7 +14,7 @@ graphs = [{
         "events" => [],
         "requests" => [{
             "q" => "my_metric{host:precise64}",
-            "q" => "anomalies(mongodb.connections.current{*}, 'basic', 2)"        
+            "q" => "anomalies(mongodb.connections.current{*}, 'basic', 2)"
         }],
         "viz" => "timeseries"
     },

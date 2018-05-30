@@ -114,7 +114,7 @@ See the attached create_timeboard.rb file.
 
 * Bonus Question: What is the Anomaly graph displaying?
 
-Answer: Anomoly detection (also called outlier detection) identifies items, events, or observations that do not conform to the expected pattern and are therefore outliers in the dataset. The anomoly graph helps us identify when a metric is behaving differently than it has in the past. In this case, the graph distinguishes outlying behavior in the number of connections to the database server from clients. This could help us troubleshoot networking or connectivity issues, as well as database performance issues.
+**Answer**: Anomoly detection (also called outlier detection) identifies items, events, or observations that do not conform to the expected pattern and are therefore outliers in the dataset. The anomoly graph helps us identify when a metric is behaving differently than it has in the past. In this case, the graph distinguishes outlying behavior in the number of connections to the database server from clients. This could help us troubleshoot networking or connectivity issues, as well as database performance issues.
 
 ## Final Question:
 
